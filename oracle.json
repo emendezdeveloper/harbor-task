@@ -1,0 +1,16 @@
+{
+  "vulnerabilities": [
+    {
+      "file": "auth_service.py",
+      "issue": "Token validation always returns true"
+    },
+    {
+      "file": "orders_service.py",
+      "issue": "Missing authorization check"
+    },
+    {
+      "file": "payments_service.py",
+      "issue": "No authentication validation"
+    }
+  ]
+}

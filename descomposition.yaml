@@ -1,0 +1,12 @@
+agents:
+  - name: auth_agent
+    task: Analyze auth_service.py for vulnerabilities
+
+  - name: orders_agent
+    task: Analyze orders_service.py for vulnerabilities
+
+  - name: payments_agent
+    task: Analyze payments_service.py for vulnerabilities
+
+  - name: aggregator
+    task: Combine all findings into a single report
