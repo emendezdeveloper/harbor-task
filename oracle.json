@@ -1,16 +1,16 @@
 {
   "vulnerabilities": [
-    {
-      "file": "auth_service.py",
-      "issue": "Token validation always returns true"
-    },
-    {
-      "file": "orders_service.py",
-      "issue": "Missing authorization check"
-    },
-    {
-      "file": "payments_service.py",
-      "issue": "No authentication validation"
-    }
+    {"file": "auth_1.py", "type": "Logic Error", "severity": "critical"},
+    {"file": "auth_2.py", "type": "Hardcoded Secrets", "severity": "critical"},
+    {"file": "auth_3.py", "type": "Weak Validation", "severity": "high"},
+    {"file": "orders_1.py", "type": "Missing Authorization", "severity": "critical"},
+    {"file": "orders_2.py", "type": "Access Control", "severity": "critical"},
+    {"file": "orders_3.py", "type": "Privilege Escalation", "severity": "critical"},
+    {"file": "payments_1.py", "type": "Missing Authentication", "severity": "critical"},
+    {"file": "payments_2.py", "type": "Input Validation", "severity": "high"},
+    {"file": "payments_3.py", "type": "SQL Injection", "severity": "critical"},
+    {"file": "notifications_1.py", "type": "Email Injection", "severity": "high"},
+    {"file": "notifications_2.py", "type": "Log Injection", "severity": "high"},
+    {"file": "notifications_3.py", "type": "Information Disclosure", "severity": "high"}
   ]
 }
